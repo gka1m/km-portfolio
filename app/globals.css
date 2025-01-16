@@ -15,8 +15,13 @@
 }
 
 body {
-  /* color: var(--foreground); */
-  /* background: var(--background); */
+  background: radial-gradient(125% 125% at 50% 10%, #000 40%, #63e 100%);
+  position: relative; /* To ensure the background covers the full viewport */
+  min-height: 100vh;
+  margin: 0;
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+  padding: 2rem;
   font-family: Arial, Helvetica, sans-serif;
-  padding: 1rem;
 }
