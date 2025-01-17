@@ -2,8 +2,8 @@
 import Link from "next/link";
 import React from "react";
 import Image from "next/image";
-import km from "../../public/km.png";
-import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin } from "react-icons/fa";
+import logo from "../../public/logo.png";
+import { FaLinkedin, FaGithub } from "react-icons/fa";
 
 const Navbar: React.FC = () => {
   return (
@@ -11,42 +11,26 @@ const Navbar: React.FC = () => {
       <div className="max-w-screen-xl mx-auto px-6 py-4 flex justify-between items-center">
         <div className="text-xl font-bold">
           <Link href="/" className="hover:text-gray-400">
-            <Image src={km} alt="logo" />
+            <Image src={logo} alt="logo" />
           </Link>
         </div>
 
-        <div className="flex space-x-6">
+        <div className="flex space-x-6 px-3">
           <Link
-            href="https://facebook.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hover:text-blue-600"
-          >
-            <FaFacebook size={24} />
-          </Link>
-          <Link
-            href="https://twitter.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hover:text-blue-400"
-          >
-            <FaTwitter size={24} />
-          </Link>
-          <Link
-            href="https://instagram.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hover:text-pink-500"
-          >
-            <FaInstagram size={24} />
-          </Link>
-          <Link
-            href="https://linkedin.com"
+            href="https://www.linkedin.com/in/gohkm/"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-blue-700"
           >
             <FaLinkedin size={24} />
+          </Link>
+          <Link
+            href="https://github.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-purple-700"
+          >
+            <FaGithub size={24} />
           </Link>
         </div>
       </div>
