@@ -6,7 +6,6 @@ import "./globals.css";
 const Homepage = () => {
   return (
     <div>
-      {/* <p className="text-cyan-50">Homepage</p> */}
       <Navbar />
       <Hero />
     </div>
