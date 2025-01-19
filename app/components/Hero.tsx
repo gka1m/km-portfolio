@@ -13,9 +13,14 @@ const Hero = () => {
             <span className="bg-gradient-to-r from-pink-300 via-slate-500 to-purple-500 bg-clip-text text-4xl tracking-tight text-transparent">
               Aspiring Programmer
             </span>
-            <p className="text-white py-10">{summary}</p>
+            <p className="text-white py-10 tracking-tight font-light">
+              {summary}
+            </p>
           </div>
         </div>
+        {/* <div className="w-full lg:w-1/2 lg:p-8">
+          <img src=""
+        </div> */}
       </div>
     </div>
   );
