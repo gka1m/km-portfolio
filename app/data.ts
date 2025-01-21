@@ -23,4 +23,25 @@ export const timelineData = [
       "Participated in Korea University's International Summer Campus as an NUS Summer Exchange student",
     date: "Jun 2022 - Aug 2022",
   },
+  {
+    id: 3,
+    title: "Upskilling",
+    location: "Singapore",
+    description: "Bridged fundamentals in knowledge using online courses such as CS50",
+    date: "Jul 2023 - Mar 2024"
+  },
+  {
+    id: 4,
+    title: "42 Singapore Piscine",
+    location: "Singapore",
+    description: "Participated in 42's Piscine in Singapore to join Ecole 42",
+    date: "Apr 2024 - May 2024",
+  },
+  {
+    id: 5,
+    title: "42 Singapore",
+    location: "Singapore",
+    description: "Enrolled as a student in 42 Singapore",
+    date: "May 2024 - Present"
+  }
 ];
