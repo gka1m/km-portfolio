@@ -2,11 +2,8 @@ import React from "react";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import About from "./components/About";
+import Timeline from "./components/Timeline";
 import "./globals.css";
-import {
-  VerticalTimeline,
-  VerticalTimelineElement,
-} from "react-vertical-timeline-component";
 
 const Homepage = () => {
   return (
@@ -14,6 +11,7 @@ const Homepage = () => {
       <Navbar />
       <Hero />
       <About />
+      <Timeline />
     </div>
   );
 };
