@@ -7,8 +7,8 @@ import { FaLinkedin, FaGithub } from "react-icons/fa";
 
 const Navbar: React.FC = () => {
   return (
-    <nav className="text-white shadow-md w-screen">
-      <div className="w-screen mx-auto px-6 py-4 flex justify-between">
+    <nav className="text-white shadow-md w-full">
+      <div className="mx-auto px-6 py-4 flex justify-between">
         <div className="text-xl font-bold">
           <Link href="/" className="hover:text-gray-400">
             <Image src={logo} alt="logo" />
