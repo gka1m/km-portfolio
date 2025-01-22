@@ -32,7 +32,7 @@ export const timelineData = [
   },
   {
     id: 4,
-    title: "42 Singapore Piscine",
+    title: "Piscine (42 Singapore)",
     location: "Singapore",
     description: "Participated in 42's Piscine in Singapore to join Ecole 42",
     date: "Apr 2024 - May 2024",

@@ -1,51 +1,45 @@
 import React from "react";
 import { timelineData } from "../data";
 
-interface Event {
-  id: number;
-  title: string;
-  location: string;
-  description: string;
-  date: string;
-}
-
 const Timeline = () => {
   return (
-    <div className="border-b border-neutral-900 border-transparent pb-4 px-4 lg:mb-35">
+    <div className="border-b border-neutral-900 pb-4 px-4 lg:mb-35">
       <h2 className="my-20 text-white text-center text-4xl">Education</h2>
       <div className="relative">
-        <div className="flex flex-col space-y-12">
-          {timelineData.map((event) => (
-            <div key={event.id} className="flex flex-col items-center">
-              <Circle />
-              <Pillar />
-              <EventCard event={event} />
+        {timelineData.map((event, index) => (
+          <div key={event.id} className="flex items-center mb-10">
+            <Circle />
+            <div className="ml-6 flex-grow">
+              <div className="bg-neutral-900 p-4 rounded-lg shadow-lg">
+                <h3 className="text-white font-semibold text-xl underline">
+                  {event.title}
+                </h3>
+                <p className="text-gray-400">{event.location}</p>
+                <p className="text-white mt-2">{event.description}</p>
+                <p className="text-gray-500 mt-2">{event.date}</p>
+              </div>
             </div>
-          ))}
-        </div>
+          </div>
+        ))}
       </div>
     </div>
   );
 };
 
 const Circle = () => {
-  return <div className="rounded-full w-4 h-4 bg-blue-500 mx-auto"></div>;
+  return (
+    <div className="relative">
+      <div className="w-8 h-8 border-2 border-cyan-400 rounded-full flex items-center justify-center">
+        <div className="w-4 h-4 bg-cyan-400 rounded-full"></div>
+      </div>
+    </div>
+  );
 };
 
 const Pillar = () => {
   return (
-    <div className="rounded-t-full rounded-b-fullw-2 h-full bg-blue-500 mx-auto"></div>
+    <div className="rounded-t-full rounded-b-full w-2 h-full bg-blue-500 mx-auto"></div>
   );
 };
 
-const EventCard = ({ event }: { event: Event }) => {
-  return (
-    <div className="flex flex-col gap-y-2 border shadow-md rounded-xl p-4">
-      <h3 className="text-xl font-semibold text-white">{event.title}</h3>
-      <p className="text-sm text-gray-500">{event.location}</p>
-      <p className="text-md text-white">{event.description}</p>
-      <p className="text-sm text-gray-400">{event.date}</p>
-    </div>
-  );
-};
 export default Timeline;
