@@ -3,7 +3,7 @@ import { timelineData } from "../data";
 
 const Timeline = () => {
   return (
-    <div className="border-b border-neutral-900 pb-4 px-4 lg:mb-35">
+    <div className="border-b border-neutral-900 border-transparent pb-4 px-4 lg:mb-35">
       <h2 className="my-20 text-white text-center text-4xl">Education</h2>
       <div className="relative">
         {timelineData.map((event, index) => (

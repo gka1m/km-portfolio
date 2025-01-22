@@ -2,7 +2,7 @@ import React from "react";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import About from "./components/About";
-import Timeline from "./components/Timeline";
+import Contact from "./components/Contact";
 import "./globals.css";
 
 const Homepage = () => {
@@ -11,7 +11,7 @@ const Homepage = () => {
       <Navbar />
       <Hero />
       <About />
-      <Timeline />
+      <Contact />
     </div>
   );
 };
