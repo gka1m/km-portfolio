@@ -46,3 +46,9 @@ export const timelineData = [
     date: "May 2024 - Present",
   },
 ];
+
+export const contactInfo = {
+  email: "kmgoh9@gmail.com",
+  Linkedin: "https://www.linkedin.com/in/gohkm/",
+  Github: "https://github.com/gka1m",
+};
