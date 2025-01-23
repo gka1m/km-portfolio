@@ -10,7 +10,7 @@ const Navbar: React.FC = () => {
     <nav className="text-white shadow-md w-full">
       <div className="px-6 py-4 flex justify-between">
         <div className="text-xl font-bold">
-          <Link href="/" className="hover:text-gray-400">
+          <Link href="/" className="hover:text-red-600">
             <Image src={logo} alt="logo" />
           </Link>
         </div>
