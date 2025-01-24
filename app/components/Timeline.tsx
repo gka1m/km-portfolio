@@ -1,12 +1,22 @@
+// components/Timeline.tsx
+"use client";
 import React from "react";
 import { timelineData } from "../data";
 
-const Timeline = () => {
+interface TimelineProps {
+  isSidebarOpen: boolean;
+}
+
+const Timeline: React.FC<TimelineProps> = ({ isSidebarOpen }) => {
   return (
-    <div className="border-b border-neutral-900 border-transparent pb-4 px-4 lg:mb-35">
+    <div
+      className={`border-b border-neutral-900 border-transparent pb-4 px-4 lg:mb-35 transition-all duration-300 ${
+        isSidebarOpen ? "ml-64" : "" // Shift content right when sidebar is open
+      }`}
+    >
       <h2 className="my-20 text-white text-center text-4xl">Education</h2>
-      <div className="relative">
-        {timelineData.map((event, index) => (
+      <div className="intrinsic">
+        {timelineData.map((event) => (
           <div key={event.id} className="flex items-center mb-10">
             <Circle />
             <div className="ml-6 flex-grow">
@@ -28,17 +38,11 @@ const Timeline = () => {
 
 const Circle = () => {
   return (
-    <div className="relative">
+    <div className="intrinsic">
       <div className="w-8 h-8 border-2 border-cyan-400 rounded-full flex items-center justify-center">
         <div className="w-4 h-4 bg-cyan-400 rounded-full"></div>
       </div>
     </div>
-  );
-};
-
-const Pillar = () => {
-  return (
-    <div className="rounded-t-full rounded-b-full w-2 h-full bg-blue-500 mx-auto"></div>
   );
 };
 
