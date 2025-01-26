@@ -52,3 +52,16 @@ export const contactInfo = {
   Linkedin: "https://www.linkedin.com/in/gohkm/",
   Github: "https://github.com/gka1m",
 };
+
+export const experiences = [
+  {
+    duration: "Jan 2022 - May 2022",
+    role: "Research Intern (Indoor Bluetooth Tracking System)",
+    company: "Venture Corporation Ltd",
+    description:
+      "Tested the implementation of a real-time indoor tracking system using Bluetooth Low Energy sensors, resulting in a successful test phase in object location detection. Conducted thorough analysis of the data collected from the Bluetooth sensors, leveraging it to debug and improve the source code, leading to an improvement in the accuracy of the tracking system in location detection",
+    skills: ["Python", "Git", "Internet of Things"],
+  },
+];
+
+export const projects = {};

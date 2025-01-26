@@ -20,8 +20,8 @@ body {
   min-height: 100vh;
   margin: 0;
   display: flex;
-  /* align-items: center; */
   justify-content: center;
   padding: 2rem;
   font-family: Georgia, 'Times New Roman', Times, serif;
+  color: white;
 }
