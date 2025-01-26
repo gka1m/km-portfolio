@@ -64,4 +64,26 @@ export const experiences = [
   },
 ];
 
-export const projects = {};
+export const projects = [
+  {
+    title: "Frontend Project (Task Tracking Website)",
+    // image: project_1,
+    description:
+      "A frontend web application designed to help users manage their time and tasks using a Pomodoro timer and a to-do list. With the potential to scale it into a full-stack solution, future plans include adding user authentication, data persistence, and task synchronization.",
+    technologies: ["React", "Typescript", "Vite", "Tailwind", "HTML"],
+  },
+  {
+    title: "Portfolio Website",
+    // image: project_2,
+    description:
+      "A personal website to showcase the portfolio of projects done, skills acquired, as well as contact information",
+    technologies: ["React", "Typescript", "Nextjs", "HTML", "Tailwind"],
+  },
+  {
+    title: "42 Core Curriculum",
+    // image: project_3,
+    description:
+      "A repository of projects completed as a student of 42 Singapore. Project list includes creating a library of functions, graphics projects, and a program that aims to mimic the core functionalities of Bash.",
+    technologies: ["C", "Linux", "Bash"],
+  },
+];

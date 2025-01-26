@@ -13,14 +13,14 @@ import { FcLinux } from "react-icons/fc";
 const Technologies = () => {
   return (
     <div className="border-b border-transparent pb-24">
-      <h2 className="my-20 text-center text-4xl">Technologies</h2>
+      <h2 className="my-20 text-center text-4xl">Technology Stacks</h2>
 
       {/* Container wrapping both sections */}
-      <div className="flex flex-col gap-6 p-10 justify-center items-center">
+      <div className="flex flex-col items-center gap-16 p-10">
         {/* Languages */}
-        <div className="grid grid-cols-2 gap-6 items-center">
-          <span className="text-xl font-semibold w-40">Languages</span>
-          <div className="flex gap-6 items-center">
+        <div className="flex flex-col items-center">
+          <span className="text-xl font-semibold mb-6">Languages</span>
+          <div className="flex justify-center gap-6 flex-wrap">
             <div className="rounded-2xl border-2 border-neutral-800 p-4">
               <FaPython className="text-3xl" />
             </div>
@@ -42,12 +42,12 @@ const Technologies = () => {
           </div>
         </div>
 
-        {/* Frameworks (now aligned with Languages) */}
-        <div className="grid grid-cols-2 gap-6 items-center">
-          <span className="text-xl font-semibold w-40 items-center">
-            Frameworks
+        {/* Frameworks */}
+        <div className="flex flex-col items-center">
+          <span className="text-xl font-semibold mb-6">
+            Frameworks/Libraries
           </span>
-          <div className="flex gap-6 items-center">
+          <div className="flex justify-center gap-6 flex-wrap">
             <div className="rounded-2xl border-2 border-neutral-800 p-4">
               <RiReactjsLine className="text-3xl text-blue-400" />
             </div>
@@ -56,6 +56,21 @@ const Technologies = () => {
             </div>
             <div className="rounded-2xl border-2 border-neutral-800 p-4">
               <RiNextjsLine className="text-3xl text-white" />
+            </div>
+          </div>
+        </div>
+
+        <div className="flex flex-col items-center">
+          <span className="text-xl font-semibold mb-6">Other Skills</span>
+          <div className="flex justify-center gap-6 flex-wrap">
+            <div className="rounded-2xl border-2 border-neutral-800 p-4">
+              <FaGitAlt className="text-3xl text-orange-500" />
+            </div>
+            <div className="rounded-2xl border-2 border-neutral-800 p-4">
+              <FaGithub className="text-3xl text-purple-700" />
+            </div>
+            <div className="rounded-2xl border-2 border-neutral-800 p-4">
+              <FcLinux className="text-3xl" />
             </div>
           </div>
         </div>
