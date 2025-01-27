@@ -82,7 +82,7 @@ export const projects = [
     image: portfolio,
     description:
       "A personal website to showcase the portfolio of projects done, skills acquired, as well as contact information",
-    repo: "put repo here",
+    repo: "https://github.com/gka1m/km-portfolio",
     technologies: ["React", "Typescript", "Nextjs", "HTML", "Tailwind"],
   },
   {
