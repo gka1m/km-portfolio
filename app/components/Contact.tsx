@@ -1,7 +1,6 @@
 "use client";
 import React, { useState } from "react";
 import { contactInfo } from "../data";
-import Link from "next/link";
 import { motion } from "framer-motion";
 
 const Contact = () => {
