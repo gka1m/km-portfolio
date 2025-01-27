@@ -72,7 +72,7 @@ const Navbar: React.FC = () => {
         <div className="flex flex-col space-y-4 p-4">
           <Link href="/education" className="hover:text-cyan-600">
             <FaGraduationCap size={24} className="inline m-4" />
-            Education
+            My Journey
           </Link>
           <Link href="/experience" className="hover:text-cyan-600">
             <FaBriefcase size={24} className="inline m-4" />
