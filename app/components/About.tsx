@@ -40,8 +40,8 @@ const About = () => {
           transition={{ duration: 1 }}
           className="w-full lg:w-1/2 lg:p-8"
         >
-          <div className="flex justify-center lg:justify-start">
-            <p className="text-white tracking-tight font-light pr-8 text-justify">
+          <div className="flex justify-center">
+            <p className="text-white tracking-tight font-light items-center text-justify">
               {about.split("\n").map((line, index) => (
                 <React.Fragment key={index}>
                   {line}
