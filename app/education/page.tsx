@@ -1,12 +1,12 @@
 import React from "react";
 import Navbar from "../components/Navbar";
-import Timeline from "../components/Timeline";
+import Time from "../components/Timeline";
 
 const EducationPage = () => {
   return (
     <div className="w-full">
       <Navbar />
-      <Timeline isSidebarOpen={false} />
+      <Time />
     </div>
   );
 };

@@ -51,6 +51,8 @@ const Timeline: React.FC<TimelineProps> = ({ isSidebarOpen }) => {
             className="flex items-center mb-10"
           >
             <Circle />
+            {/* <Connector position={"top"} /> */}
+
             <div className="ml-6 flex-grow">
               <div className="bg-neutral-900 p-4 rounded-lg shadow-lg">
                 <h3 className="text-white font-semibold text-xl underline">
@@ -75,6 +77,27 @@ const Circle = () => {
         <div className="w-4 h-4 bg-cyan-400 rounded-full"></div>
       </div>
     </div>
+  );
+};
+
+const Connector = ({ position }: { position: "top" | "bottom" }) => {
+  const connectorStyles =
+    position === "top"
+      ? { top: "32px", height: "calc(100% - 32px)", width: "1px", left: "16px" }
+      : {
+          top: "calc(100% + 8px)",
+          height: "calc(100% - 32px)",
+          width: "1px",
+          left: "16px",
+        };
+
+  return (
+    <span
+      className="absolute bg-cyan-400 transition-opacity duration-200"
+      style={connectorStyles}
+    >
+      <span className="w-full h-full bg-cyan-400"></span>
+    </span>
   );
 };
 
