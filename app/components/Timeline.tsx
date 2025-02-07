@@ -58,9 +58,10 @@ const Timeline: React.FC<TimelineProps> = ({ isSidebarOpen }) => {
                 <h3 className="text-white font-semibold text-xl underline">
                   {event.title}
                 </h3>
-                <p className="text-gray-400">{event.location}</p>
                 <p className="text-white mt-2">{event.description}</p>
-                <p className="text-gray-500 mt-2">{event.date}</p>
+                <p className="text-gray-500 mt-2">
+                  {event.date} | {event.location}
+                </p>
               </div>
             </div>
           </motion.div>
