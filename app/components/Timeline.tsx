@@ -81,25 +81,4 @@ const Circle = () => {
   );
 };
 
-const Connector = ({ position }: { position: "top" | "bottom" }) => {
-  const connectorStyles =
-    position === "top"
-      ? { top: "32px", height: "calc(100% - 32px)", width: "1px", left: "16px" }
-      : {
-          top: "calc(100% + 8px)",
-          height: "calc(100% - 32px)",
-          width: "1px",
-          left: "16px",
-        };
-
-  return (
-    <span
-      className="absolute bg-cyan-400 transition-opacity duration-200"
-      style={connectorStyles}
-    >
-      <span className="w-full h-full bg-cyan-400"></span>
-    </span>
-  );
-};
-
 export default Timeline;
