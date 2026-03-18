@@ -11,7 +11,7 @@ const Homepage = () => {
       <Navbar />
       <Hero />
       <About />
-      <Contact />
+      {/* <Contact /> */}
     </div>
   );
 };
