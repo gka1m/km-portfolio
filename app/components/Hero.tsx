@@ -24,7 +24,8 @@ const Hero = () => {
               animate="visible"
               className="pb-10 text-5xl font-thin tracking-tight lg:mt-16 lg:text-8xl text-white text-center lg:text-left"
             >
-              Goh Kai Ming
+              Hi, <br />
+              I'm Kai Ming
             </motion.h1>
 
             <motion.span
