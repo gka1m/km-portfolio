@@ -2,60 +2,14 @@ import task from "../public/task.jpg";
 import FortytwoLogo from "../public/FortytwoLogo.png";
 import portfolio from "../public/portfolio.jpg";
 
-export const summary: string = `I am a Biomedical Engineering graduate from the National University of Singapore with a passion for programming. 
-After discovering my love for coding, I joined 42 Singapore to fully explore my passion and to continuously upskill.
-My goal is to leverage my technical skills to create innovative and exciting projects, both in the frontend and backend areas, to improve user experiences across diverse platforms.`;
+export const summary: string = `Building across the stack, from responsive UIs to systems-level programming`;
 
-export const about: string = `I am a Biomedical  Engineering graduate from National University of Singapore (NUS). My passion for programming began when I was exposed to the world of programming through my modules. Through these modules, I discovered that I enjoyed creating innovative solutions that have real-world impact. My internship with Venture Corporation Ltd served to test my knowledge of programming and imbued me with knowledge of technologies involved in a collaborative environment, such as Git. I joined 42 Singapore as a student shortly after graduation to further my skills in an environment that fosters collaboration, continuous learning and creative thinking.
+export const about: string = `I'm an aspiring software engineer with experience across both frontend and backend development. I build responsive UIs with React and Typescript, and work with scripting languages like Python and C/C++ for backend and systems-level programming.
 
-Whether it's building sleek and responsive interfaces, or developing robust backend systems, I am excited by the oppportunity to work on projects that have a meaningful impact on the world. My goal is to collaborate with like-minded individuals, learn from others, and to contribute to innovative projects that bridge the gap between technology and real-world applications.`;
+I'm comfortable working in Linux environments and utilizing tools such as Docker to containerize and manage applications. I enjoy the process of understanding how software works from end to end, from user interfaces to the underlying systems, and writing clean, efficient code that is scalable.
 
-export const timelineData = [
-  {
-    id: 1,
-    title: "Bachelor's Degree (National University of Singapore)",
-    location: "Singapore",
-    description:
-      "Graduated from NUS with a bachelor's degree in biomedical engineering",
-    date: "Aug 2019 - Jul 2023",
-  },
-  {
-    id: 2,
-    title: "Korea University",
-    location: "Seoul, South Korea",
-    description:
-      "Participated in Korea University's International Summer Campus as an NUS Summer Exchange student",
-    date: "Jun 2022 - Aug 2022",
-  },
-  {
-    id: 3,
-    title: "Upskilling",
-    location: "Singapore",
-    description:
-      "Bridged fundamentals in knowledge using online courses such as CS50",
-    date: "Jul 2023 - Mar 2024",
-  },
-  {
-    id: 4,
-    title: "Piscine (42 Singapore)",
-    location: "Singapore",
-    description: "Participated in 42's Piscine in Singapore to join Ecole 42",
-    date: "Apr 2024 - May 2024",
-  },
-  {
-    id: 5,
-    title: "42 Singapore",
-    location: "Singapore",
-    description: "Enrolled as a student in 42 Singapore",
-    date: "May 2024 - Present",
-  },
-];
+Currently, I'm focusing on developing and strengthening my skills across the stack and building projects that solve real-world problems.`;
 
-export const contactInfo = {
-  email: "kmgoh9@gmail.com",
-  Linkedin: "https://www.linkedin.com/in/gohkm/",
-  Github: "https://github.com/gka1m",
-};
 
 export const experiences = [
   {

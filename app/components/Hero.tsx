@@ -41,7 +41,7 @@ const Hero = () => {
               variants={settings(1)}
               initial="hidden"
               animate="visible"
-              className="text-white py-10 tracking-tight font-light text-justify"
+              className="text-white py-10 tracking-tight font-light text-justify text-xl"
             >
               {summary}
             </motion.p>
