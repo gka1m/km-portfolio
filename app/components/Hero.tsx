@@ -14,7 +14,7 @@ const Hero = () => {
   });
 
   return (
-    <div className="border-b border-neutral-900 pb-4 px-4 lg:mb-35">
+    <div className="border-b border-transparent pb-4 px-4 lg:mb-35">
       <div className="flex justify-center">
         <div className="w-full max-w-4xl">
           <div className="flex flex-col items-center lg:items-start">
@@ -22,7 +22,7 @@ const Hero = () => {
               variants={settings(0)}
               initial="hidden"
               animate="visible"
-              className="pb-10 text-5xl font-thin tracking-tight lg:mt-16 lg:text-8xl text-white text-center lg:text-left"
+              className="pb-10 text-5xl font-thin tracking-tight lg:mt-16 lg:text-7xl text-white text-center lg:text-left"
             >
               Hi, <br />
               I'm Kai Ming

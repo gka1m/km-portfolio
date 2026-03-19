@@ -2,13 +2,28 @@ import React from "react";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import About from "./components/About";
+import Experience from "./components/Experience";
 
 const Homepage = () => {
   return (
-    <div>
+    <div className="h-screen flex flex-col">
+      {/* Navbar */}
       <Navbar />
-      <Hero />
-      <About />
+
+      {/* Main Content */}
+      <div className="flex flex-1 overflow-hidden">
+        {/* LEFT SIDE */}
+        <div className="w-full lg:w-1/2 flex items-center justify-center">
+          <Hero />
+        </div>
+
+        {/* RIGHT SIDE (SCROLLABLE) */}
+        <div className="w-full lg:w-1/2 overflow-y-auto no-scrollbar">
+          <About />
+          {/* future sections */}
+          <Experience />
+        </div>
+      </div>
     </div>
   );
 };

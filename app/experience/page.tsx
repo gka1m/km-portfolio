@@ -9,7 +9,6 @@ const ExpPage = () => {
     <div className="w-full">
       <Navbar />
       <Technologies />
-      <Experience />
       <Projects />
     </div>
   );
