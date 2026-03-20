@@ -13,7 +13,7 @@ const Navbar: React.FC = () => {
         {/* Logo (Home Button) */}
         <Link href="/" className="flex items-center gap-2">
           <Image src={logo} alt="logo" width={40} height={40} />
-          <span className="text-xl font-bold">My Portfolio</span>
+          <span className="text-xl font-bold">Kai Ming</span>
         </Link>
 
         {/* Right side icons */}

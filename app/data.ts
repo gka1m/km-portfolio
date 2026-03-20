@@ -10,7 +10,6 @@ I'm comfortable working in Linux environments and utilizing tools such as Docker
 
 Currently, I'm focusing on developing and strengthening my skills across the stack and building projects that solve real-world problems.`;
 
-
 export const experiences = [
   {
     duration: "Jan 2022 - May 2022",
@@ -19,6 +18,14 @@ export const experiences = [
     description:
       "Tested the implementation of a real-time indoor tracking system using Bluetooth Low Energy sensors, resulting in a successful test phase in object location detection. Conducted thorough analysis of the data collected from the Bluetooth sensors, leveraging it to debug and improve the source code, leading to an improvement in the accuracy of the tracking system in location detection",
     skills: ["Python", "Git", "Internet of Things"],
+  },
+  {
+    duration: "Nov 2025 - Present",
+    role: "Freelance Developer",
+    company: "Self-Employed",
+    description:
+      "Currently working on a client project to develop a landing page to showcase their products and services, using React and Material UI. Implementing responsive UI components and structuring frontend architecture for maintainability and scalability. Collaborating with client on requirements and iterating on features based on feedback.",
+    skills: ["React", "TypeScript", "HTML", "Material UI", "Vite"],
   },
 ];
 
@@ -37,7 +44,7 @@ export const projects = [
     description:
       "A personal website to showcase the portfolio of projects done, skills acquired, as well as contact information",
     repo: "https://github.com/gka1m/km-portfolio",
-    technologies: ["React", "Typescript", "Nextjs", "HTML", "Tailwind"],
+    technologies: ["React", "Typescript", "Nextjs", "HTML", "Tailwind CSS"],
   },
   {
     title: "42 Core Curriculum",

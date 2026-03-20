@@ -3,6 +3,8 @@ import React from "react";
 import { motion } from "framer-motion";
 import { experiences } from "../data";
 
+const CV_LINK = "/cv_full.pdf";
+
 const Experience = () => {
   return (
     <div className="border-b border-neutral-900 border-transparent pb-4">
@@ -12,7 +14,7 @@ const Experience = () => {
         transition={{ duration: 0.5 }}
         className="my-20 text-center text-4xl"
       >
-        Experience
+        <span className="text-cyan-600">Relevant</span> Experience
       </motion.h1>
       <div>
         {experiences.map((exp, index) => (
@@ -46,6 +48,21 @@ const Experience = () => {
             </motion.div>
           </div>
         ))}
+      </div>
+      <div className="flex justify-end mb-12">
+        <a
+          href={CV_LINK}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="group inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-transparent text-white font-medium transition-all duration-300 hover:text-cyan-300"
+        >
+          <span className="transition-transform duration-300 group-hover:scale-105">
+            View CV
+          </span>
+          <span className="transition-transform duration-300 group-hover:translate-x-2">
+            →
+          </span>
+        </a>
       </div>
     </div>
   );
