@@ -49,9 +49,15 @@ export const projects = [
   {
     title: "42 Core Curriculum",
     image: FortytwoLogo,
-    description:
-      "A repository of projects completed as a student of 42 Singapore. Project list includes creating a library of functions, graphics projects, and a program that aims to mimic the core functionalities of Bash.",
+    description: {
+      intro: "A repository of projects completed as a student of 42 Singapore. Example projects:",
+      bullets: [
+        "ft_transcendence: Full-stack multiplayer Wordle game with real-time gameplay and user authentication",
+        "webserv: HTTP/1.1 server built from scratch in C++ with support for CGI and non-blocking I/O",
+        "minishell: A minimal Unix shell with piping, redirections, and built-in commands",
+      ],
+    },
     repo: "https://github.com/gka1m/42-core",
-    technologies: ["C", "Linux", "Bash"],
+    technologies: ["C", "C++", "Docker", "Linux", "Bash"],
   },
 ];

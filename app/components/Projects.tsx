@@ -5,6 +5,24 @@ import Link from "next/link";
 import { projects } from "../data";
 import { motion } from "framer-motion";
 
+const renderDescription = (
+  description: string | { intro: string; bullets: string[] },
+) => {
+  if (typeof description === "object") {
+    return (
+      <div className="mb-4">
+        <p>{description.intro}</p>
+        <ul className="list-disc list-inside space-y-1 mt-1">
+          {description.bullets.map((point, i) => (
+            <li key={i}>{point}</li>
+          ))}
+        </ul>
+      </div>
+    );
+  }
+  return <p className="mb-4">{description}</p>;
+};
+
 const Projects = () => {
   return (
     <div className="border-b border-transparent pb-4">
@@ -28,8 +46,8 @@ const Projects = () => {
               <Image
                 src={project.image}
                 alt={project.title}
-                width={200}
-                height={200}
+                width={100}
+                height={100}
               />
             </motion.div>
             <motion.div
@@ -39,7 +57,8 @@ const Projects = () => {
               className="w-full max-w-xl lg:w-3/4"
             >
               <h6 className="mb-2 font-semibold">{project.title}</h6>
-              <p className="mb-4">{project.description}</p>
+              {/* <p className="mb-4">{project.description}</p> */}
+              {renderDescription(project.description)}
               <Link
                 href={project.repo}
                 className="m-2 rounded bg-neutral-700 text-sm font-medium px-2 py-1"
@@ -60,6 +79,20 @@ const Projects = () => {
             </motion.div>
           </div>
         ))}
+      </div>
+      <div className="flex justify-end mb-12">
+        <a
+          href="/experience"
+          rel="noopener noreferrer"
+          className="group inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-transparent text-white font-medium transition-all duration-300 hover:text-cyan-300"
+        >
+          <span className="transition-transform duration-300 group-hover:scale-105">
+            View Project List
+          </span>
+          <span className="transition-transform duration-300 group-hover:translate-x-2">
+            →
+          </span>
+        </a>
       </div>
     </div>
   );
