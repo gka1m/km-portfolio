@@ -82,7 +82,7 @@ const Projects = () => {
       </div>
       <div className="flex justify-end mb-12">
         <a
-          href="/experience"
+          href="/projects"
           rel="noopener noreferrer"
           className="group inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-transparent text-white font-medium transition-all duration-300 hover:text-cyan-300"
         >
