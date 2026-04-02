@@ -56,9 +56,12 @@ const FortyTwoProj = () => {
                   <a
                     href={proj.link}
                     target="_blank"
-                    className="hover:underline group inline-flex"
+                    className="group inline-flex items-center gap-1 hover:text-cyan-400"
                   >
-                    {proj.link}
+                    Link
+                    <span className="transition-all duration-200 ease-out opacity-70 group-hover:opacity-100 group-hover:translate-x-0.5 group-hover:-translate-y-0.5">
+                      ↗
+                    </span>
                   </a>
                 </td>
               </tr>
